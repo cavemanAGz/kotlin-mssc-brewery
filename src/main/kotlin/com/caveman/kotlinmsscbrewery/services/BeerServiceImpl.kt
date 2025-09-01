@@ -15,4 +15,13 @@ class BeerServiceImpl : BeerService {
             upc = 12345L
         )
     }
+
+    override fun saveNewBeer(newBeer: BeerDto): BeerDto {
+        return BeerDto(
+            id = UUID.randomUUID(),
+            beerName = newBeer.beerName,
+            beerStyle = newBeer.beerStyle,
+            upc = newBeer.upc,
+        )
+    }
 }

@@ -5,4 +5,5 @@ import java.util.UUID
 
 interface BeerService {
     fun getBeerById(beerId: UUID): BeerDto
+    fun saveNewBeer(newBeer: BeerDto): BeerDto
 }

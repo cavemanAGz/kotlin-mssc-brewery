@@ -36,4 +36,8 @@ class BeerServiceImpl : BeerService {
     override fun updateBeer(beerId: UUID, updatedBeer: BeerDto) {
         logger.info("Updating beer with id: $beerId")
     }
+
+    override fun deleteBeer(beerId: UUID) {
+        logger.info("Deleting beer with id: $beerId")
+    }
 }
